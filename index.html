@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    
+    <link rel="stylesheet" href="./styles.css">
+      <style>
+        body {
+     font-family: "Audiowide", sans-serif;
+        } 
+      </style>
+</head>
+
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <span class="title">
+            TODO APP
+        </span>
+    </div>
+    <div class="main">    
+        <div>
+            <span id="texts">Add Tasks :</span>
+        </div>  
+        
+        <br>
+        <div class="top">
+            <input id="task" type="text" placeholder="Eg: task1.....">
+            <button class="button_main" onclick="addToDo()">Add</button>
+        </div>
+        <br>
+        <span id="texts">Search For Tasks :</span>
+        <br>
+        <div class="bottom">
+            <input type="text" id="searchbox" onkeyup="SearchTab()">           
+        </div>
+        <br>
+        <hr id="gapp">
+        <br>
+        <span id="texts">To Do List : </span>
+        <br>
+        <br>
+        <div id="task-list">
+        </div>
+
+        <br>
+    </div>
+
+</body>
+<script src="./todo.js"></script>
+</html>
